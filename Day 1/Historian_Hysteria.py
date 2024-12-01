@@ -4,6 +4,8 @@ with open("D1.txt", "r") as f:
     a, b = sorted([int(i.split()[0]) for i in data]), sorted([int(i.split()[1]) for i in data])
     print(sum([abs(a[i] - b[i]) for i in range(len(a))]))
 
+# 2166959
+
 # Part 2
 def make_dict(data):
     c = {}
@@ -22,3 +24,5 @@ with open("D1.txt", "r") as f:
     # print(a)
     # print(b)
     print(sum([a[i] * i * b[i] for i in a.keys() if i in b.keys()]))
+
+# 23741109
