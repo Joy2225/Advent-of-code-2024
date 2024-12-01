@@ -34,8 +34,8 @@ func main() {
 	a := make([]int, len(lines))
 	b := make([]int, len(lines))
 	for i, line := range lines {
-		fmt.Sscanf(strings.Split(line,"   ")[0], "%d", &a[i])
-		fmt.Sscanf(strings.Split(line,"   ")[1], "%d", &b[i])
+		fmt.Sscanf(strings.Fields(line)[0], "%d", &a[i])
+		fmt.Sscanf(strings.Fields(line)[1], "%d", &b[i])
 	}
 	slices.Sort(a)
 	slices.Sort(b)
