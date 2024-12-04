@@ -19,6 +19,7 @@ tr_bl = [ ''.join(data[i+x][j-x]for x in range(4)) for i in range(0, len(data)-3
 # print(tr_bl)
 total += tr_bl.count('XMAS') + tr_bl.count('SAMX')
 print(total)
+# 2378
 
 
 # Part 2
@@ -29,3 +30,4 @@ data = open('D4.txt', "r").read().split("\n")
 total = 0
 total = sum(1 if data[i][j]=='A' and check_x_mas(data, i, j) else 0 for i in range(1, len(data)-1) for j in range(1, len(data[i])-1))
 print(total)
+# 1796
