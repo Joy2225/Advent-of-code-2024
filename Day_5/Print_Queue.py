@@ -60,11 +60,12 @@ def find_wrong(wrong, dic):
                             return wrong
                         else:
                             return find_wrong(wrong, dic)
+     return wrong
 
 total = 0
 for i in wrong:
     temp =  find_wrong(i, dic)
-    print(temp)
+    # print(temp)
     total += temp[len(temp)//2]
 print(total)
 # 6370
