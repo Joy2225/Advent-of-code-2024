@@ -65,7 +65,7 @@ for idx,i in enumerate(block_map):
             break
     if not t:
         continue  
-    min_dot_tuple = min(
+    min_dot_tuple = min( # Find the dot tuple which stisfies the condition and has the least index
         (j for j in dot_map if dotted_rep.index(list(j)) < dotted_rep.index(i) and len(j) >= len(i)),
         key=lambda x: dotted_rep.index(list(x)),
         default=None
@@ -101,4 +101,4 @@ print(sum)
 # 6301361958738
 f = time.time()
 print("Time Taken:-",f-s)
-# Time Taken:- 19.383069038391113 After messing with it for around 6 hrs
+# Time Taken:- 19.383069038391113 seconds After messing with it for around 6 hrs
