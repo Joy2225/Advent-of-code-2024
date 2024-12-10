@@ -44,3 +44,4 @@ for i, j in zero_idx:
     reachable_2(i, j, data)
 
 print(total)
+# 1255
