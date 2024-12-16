@@ -5,3 +5,4 @@
 *.lock
 src
 *.toml
+robot_map.txt
