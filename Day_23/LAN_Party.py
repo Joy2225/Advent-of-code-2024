@@ -15,7 +15,7 @@ for a, b, c in combinations(computer, 3):
         t.append(a)
 
 print(len(t))
-#1238
+# 1238
 
 network = [{c} for c in computer]
 for n in network:
@@ -24,3 +24,4 @@ for n in network:
             n.add(c)
 
 print(*sorted(max(network, key=len)), ',')
+# bg,bl,ch,fn,fv,gd,jn,kk,lk,pv,rr,tb,vw
